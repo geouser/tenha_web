@@ -1,0 +1,17 @@
+.button {
+    height: 50px;
+    background: transparent;
+    border: 1px solid $greyL;
+    text-align: center;
+    font: 16px/48px $din;
+    color: $gold;
+    width: 160px;
+    &:after {
+        content: "";
+        display: block;
+        width: 95%;
+        height: 6px;
+        margin: -1px auto 0;
+        border: 1px solid $greyL;
+    }
+}

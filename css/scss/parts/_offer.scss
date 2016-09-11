@@ -29,7 +29,7 @@
     -webkit-border-radius: 50%;
             border-radius: 50%;
     position: relative;
-    line-height: 30px;
+    line-height: 25px;
     text-align: center;
     color: #444;
     position: absolute;
@@ -40,6 +40,10 @@
     &:hover {
         background: #FFF;
     }
+    i {
+        margin-left: 1px;
+    }
+    @include transition(all, .2s);
 }
 .offer--big {
     .down {
