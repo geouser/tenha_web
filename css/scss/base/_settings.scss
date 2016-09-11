@@ -1,0 +1,38 @@
+// COLORS
+// ---------------------------
+
+
+
+// FONTS
+// ---------------------------
+$ci:			'Cormorant Infant Regular';
+$cim:			'Cormorant Infant Medium';
+$cisbi:			'Cormorant Infant SemoBold Italic';
+$cum:			'Cormorant Upright Medium';
+
+$hv:			'Helvetica Neue';
+
+$din:			'DIN Pro Cond';
+
+
+// RESPONSIVE
+// ---------------------------
+
+
+
+// TYPOGRAPHIC
+// ---------------------------
+html,
+body {
+	height: 100%;
+	font-family: $ci;
+}
+
+
+// lAYOUT
+// ---------------------------
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
