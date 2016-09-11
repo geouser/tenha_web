@@ -3,9 +3,15 @@
     @include position(absolute, 0, auto, auto, 0);
     width: 100%;
     z-index: 100;
-    background: #fff;
     margin: 0;
+    height: 120px;
     @include transition(all, .4s);
+    
+    .wrapper {
+        @include flex();
+        height: 100%;
+        width: 98%;
+    }
     
         /*.................media.............*/
         @include m800 {
@@ -32,29 +38,32 @@
 /*  NAV STYLES  */
 .mainNav {
     ul {
-        @include flex();
-        list-style-type: none;
-        a {
+        li {
             display: inline-block;
-            margin: 0 20px;
-            text-decoration: none;
-            @include transition(all, .2s);             
-            &:hover {}
-        }
-
-            /*.................media.............*/
-            @include m800 { 
-                display: block;
-                height: 100%;
-                overflow: scroll;
-                position: relative;
-                li a  {   
-                    margin: 0 0 25px 0;
-                    &.active {color: #ECCC1D;}
-                    &:hover  {background: transparent;}
-                } 
+            vertical-align: middle;
+            margin-left: 30px;
+            &:first-child {
+                margin-left: 0;
             }
-            /*.............end media.............*/
+            a {
+                color: #FFF;
+                font: 18px $din;
+            }
+        }
+    }
+}
+
+.selectLang {
+    font: 18px $din;
+    background: transparent;
+    text-transform: uppercase;
+    color: $red;
+    margin-left: 30px;
+    border: none;
+    option {
+        color: $grey;
+        background: none;
+        font-size: 18px;
     }
 }
 

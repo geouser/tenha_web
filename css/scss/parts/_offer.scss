@@ -1,3 +1,17 @@
 .offer {
-    height: 800px;
+    min-height: 300px;
+    padding: 120px 0 60px;
+    background-image: url("../images/offer_bg_sm.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    &--big {
+        height: 940px;
+        background-image: url("../images/offer_bg.jpg");
+    }
+    .wrapper {
+        height: 100%;
+        @include flex($direction: column, $alignI: center, $justify: center);
+    }
 }
