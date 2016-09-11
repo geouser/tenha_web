@@ -3,6 +3,7 @@
     padding: 120px 0 60px;
     background-image: url("../images/offer_bg_sm.jpg");
     background-repeat: no-repeat;
+    position: relative;
     -webkit-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
@@ -20,18 +21,45 @@
     }
 }
 
+.down {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: rgba(255,255,255,.5);
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    position: relative;
+    line-height: 30px;
+    text-align: center;
+    color: #444;
+    position: absolute;
+    left: 0;
+    right: auto;
+    bottom: 44px;
+    margin: auto;
+    &:hover {
+        background: #FFF;
+    }
+}
+.offer--big {
+    .down {
+        right: 0;
+        bottom: 65px;
+    }
+}
+
 .quote {
     color: rgba(255,255,255, .95);
     font: 22px/25px $cisbi;
     text-align: right;
     width: 610px;
     font-weight: 100;
-    text-decoration: underline;
+    text-decoration: none;
     &--center {
         font: 38px/60px $cisbi;
         text-align: center;
-        text-decoration: none;
         width: 750px;
+        text-decoration: underline;
     }
     &:before {
         content: "";
