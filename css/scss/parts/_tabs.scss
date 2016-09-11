@@ -1,0 +1,42 @@
+.tabs {
+	position: relative;
+	padding-top: 22px;
+
+	&__menu {
+		position: absolute;
+		right: 0;
+		top: -105px;
+
+		&__item {
+			display: inline-block;
+			font-family: $cim;
+			font-size: 24px;
+
+			&:not(:last-child):after {
+				content: '/';
+				margin: 0 14px 0 20px;
+				display: inline-block;
+			}
+
+			a {
+				color: #999999;
+				-webkit-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+
+				&:hover,
+				&:focus {
+					text-decoration: none;
+					outline: 0;
+				}
+			}
+
+			&.ui-state-active,
+			&.ui-state-hover {
+				a {
+					color: $red;
+				}
+			}
+		}
+	}
+}

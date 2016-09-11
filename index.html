@@ -117,7 +117,7 @@
                     </div>
                     <div class="col col-md-6">
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <p>Ədəbiyyat ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
                     </div>
                 </div>
                 <div class="row charityList">
@@ -167,8 +167,73 @@
         <section class="media">
             <div class="container">
                 <h2>Media</h2>
+
+                <div class="tabs">
+                    <ul class="tabs__menu">
+                        <li class="tabs__menu__item"><a href="#audio">Audio</a></li>
+                        <li class="tabs__menu__item"><a href="#video">Video</a></li>
+                        <li class="tabs__menu__item"><a href="#gallery">Gallery</a></li>
+                    </ul>
+
+                    <div id="audio" class="tabs__tab">
+                        <div class="row">
+                            <div class="col-sm-6 tabs__tab__content">
+                                <div class="song">
+                                    <button class="play-btn paused">
+                                        <i class="fa fa-play"></i>
+                                        <i class="fa fa-pause"></i>
+                                    </button>
+                                    <div class="song__info">
+                                        <p class="song__info__title">Mübariz Tagıyev - Mənim həsrətim</p>
+                                        <p class="song__info__singer">(mus: Eldar Mansurov)</p>
+                                    </div>
+
+                                    <div class="player">
+                                        <div class="player-progress-bar"></div>
+                                    </div>
+                                    <audio controls>
+                                        <source src="http://storage.mp3.cc/download/32532245/QzhRVUJ3ckNFU1I4SllrS3NVT1I4andvTHFiano4U1Q0UHYwNitQNDBYZjRsb2thcG1wa1NaUDdTUHc1YU91WDUvc055eEJEMEUwQzBOZHdTcVFla3M2b3hHZ0lNWG9FQXI3VFZzVDZiNDdmczBSb3lIRURGTkd1dHZMZTRqQkE/old-man-canyon-wiser_(mp3.cc).mp3" type="audio/mp3">
+                                    </audio>
+                                </div> <!-- end song -->
+
+                                <div class="song">
+                                    <button class="play-btn paused">
+                                        <i class="fa fa-play"></i>
+                                        <i class="fa fa-pause"></i>
+                                    </button>
+                                    <div class="song__info">
+                                        <p class="song__info__title">Mübariz Tagıyev - Mənim həsrətim</p>
+                                        <p class="song__info__singer">(mus: Eldar Mansurov)</p>
+                                    </div>
+
+                                    <div class="player">
+                                        <div class="player-progress-bar"></div>
+                                    </div>
+                                    <audio controls>
+                                        <source src="https://dl.mp3poisk.me/aHR0cDovL2YubXAzcG9pc2subWUvbXAzLzAwMC85NDUvMTAxLzk0NTEwMS5tcDM/Sm91cm5leSAtIFNlcGFyYXRlIFdheXMgKFdvcmxkcyBBcGFydCk=" type="audio/mp3">
+                                    </audio>
+                                </div> <!-- end song -->
+
+
+                            </div>
+                            <div class="col-sm-6 tabs__tab__image">
+                                <img src="images/media-audio.jpg" alt="">
+                            </div>
+                        </div>
+                    </div> <!-- end tab -->
+
+                    <div id="video" class="tabs__tab">
+                        <p>Video</p>
+                    </div> <!-- end tab -->
+
+                    <div id="gallery" class="tabs__tab">
+                        <p>Gallery</p>
+                    </div> <!-- end tab -->
+
+                </div> <!-- end tabs -->
+
             </div>
-        </section>
+        </section> <!-- end media -->
 
         <section class="video">
             <div class="container">
@@ -179,7 +244,7 @@
                 <div class="video-box"></div>
                 <button class="video-control paused"><i class="fa"></i></button>
             </div>
-        </section>
+        </section> <!-- end video -->
 
         <footer class="footer">
             <nav class="footer__menu">
@@ -221,11 +286,13 @@
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB8OI63bD1KAI4MAo0yz7p0Fj-RiPEZYPk"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
         
+        <script src="js/audio-js/audio.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

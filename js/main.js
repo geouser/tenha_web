@@ -122,8 +122,71 @@ jQuery(document).ready(function($) {
     /*-------------------------
                               Video
     -------------------------*/
-    
 
 
+
+    /*-------------------------
+                              Tabs
+    -------------------------*/
+    if ( $('.tabs').length > 0 ) {
+        $('.tabs').tabs();
+    }
+
+
+     /*-------------------------
+                              Audio player
+    -------------------------*/
+    /*audiojs.events.ready(function() {
+        var as = audiojs.createAll();
+    });*/
+
+    $('.song .play-btn').on('click', function(event) {
+        event.preventDefault();    
+
+        var player = $(this).siblings('audio');
+        var customPlayer = $(this).siblings('.player');
+        var progressBar = customPlayer.find('.player-progress-bar');
+        var progressBarHandle = customPlayer.find('.ui-slider-handle');
+
+        var startTime = 0;
+        var currentTime = 0;
+        var endTime = player[0].seekable.end(0);
+
+
+        if ($(this).hasClass('paused')) {
+            $('audio').trigger('pause');
+            $('.song .play-btn').addClass('paused');
+            $('.player').css('visibility', 'hidden');
+        }
+
+        customPlayer.css('visibility', 'visible');
+        progressBar.attr( 'end-time', endTime );
+
+        if ($(this).hasClass('paused')) {
+            player.trigger('play');
+        } else {
+            player.trigger('pause');
+            customPlayer.css('visibility', 'hidden');
+        }
+
+        player[0].ontimeupdate=function(){
+            currentTime = player[0].currentTime;
+            var pos = (currentTime/endTime)*100;
+            progressBarHandle.css('left', pos+'%');
+        };
+
+
+        $(this).toggleClass('paused');
+    });
+
+    $('.player-progress-bar').slider({
+        value: 0,
+        change: function( event, ui ) {
+            var player = $(this).parent('.player').siblings('audio');
+            var val = ui.value;
+            var endTime = $(this).attr('end-time');
+            player[0].currentTime = (val/100)*endTime;
+        }
+    });
 
 }); // end file
