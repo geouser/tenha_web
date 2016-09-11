@@ -15,3 +15,19 @@
         @include flex($direction: column, $alignI: center, $justify: center);
     }
 }
+
+.quote {
+    color: #FFF;
+    font: 38px/60px $cisbi;
+    text-align: center;
+    width: 750px;
+    font-weight: 100;
+    .author {
+        display: block;
+        text-transform: uppercase;
+        font: 22px $din;
+        color: $gold;
+        text-shadow: -0.087px 0.996px 1px rgba(0, 0, 0, 0.3);
+        margin-top: 20px;
+    }
+}

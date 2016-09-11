@@ -45,21 +45,36 @@
             &:first-child {
                 margin-left: 0;
             }
+            &:last-of-type {
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    vertical-align: middle;
+                    height: 30px;
+                    border-left: 1px solid rgba(255,255,255, .1);
+                    margin-left: 30px;
+                }
+            }
             a {
                 color: #FFF;
                 font: 18px $din;
+                text-transform: uppercase;
             }
         }
     }
 }
 
 .selectLang {
+    width: 58px;
+    padding: 0;
     font: 18px $din;
     background: transparent;
     text-transform: uppercase;
     color: $red;
     margin-left: 30px;
     border: none;
+    display: inline-block;
+    vertical-align: middle;
     option {
         color: $grey;
         background: none;
