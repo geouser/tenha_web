@@ -76,7 +76,9 @@ h2 {
 section {
     padding: 70px 0;
 }
-
+hr {
+    border-top-color: #ccc;
+}
 
 .coffeeBg {
     background-color: $coffee;
