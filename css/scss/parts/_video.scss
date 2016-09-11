@@ -1,0 +1,40 @@
+.video {
+	position: relative;
+
+	.container {
+		position: absolute;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
+		top: 70px;
+		z-index: 2;
+	}
+
+	&__holder {
+		position: relative;
+		width: 100%;
+		z-index: 1;
+
+		&:after {
+			content: '';
+			display: block;
+			padding-top: 49%;
+		}
+
+		.video-box {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-size: cover;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-image: url(../images/video.jpg);
+		}
+	}
+}
