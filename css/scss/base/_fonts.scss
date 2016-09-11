@@ -45,15 +45,16 @@
 }
 
 @font-face {
-	font-family: 'DIN Pro Cond';
-	src: url('../fonts/subset-DINPro-Bold.eot');
-	src: url('../fonts/subset-DINPro-Bold.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/subset-DINPro-Bold.woff') format('woff'),
-		 url('../fonts/subset-DINPro-Bold.ttf') format('truetype'),
-		 url('../fonts/subset-DINPro-Bold.svg#DINPro-Bold') format('svg');
-	font-weight: 900;
+	font-family: 'DIN Pro Cond Bold';
+	src: url('../fonts/subset-DINPro-CondensedBold.eot');
+	src: url('../fonts/subset-DINPro-CondensedBold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/subset-DINPro-CondensedBold.woff') format('woff'),
+		 url('../fonts/subset-DINPro-CondensedBold.ttf') format('truetype'),
+		 url('../fonts/subset-DINPro-CondensedBold.svg#DINPro-CondensedBold') format('svg');
+	font-weight: bold;
 	font-style: normal;
 }
+
 
 @font-face {
 	font-family: 'Cormorant Upright Medium';
