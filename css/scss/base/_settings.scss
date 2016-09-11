@@ -14,7 +14,7 @@ $cim:			'Cormorant Infant Medium';
 $cisbi:			'Cormorant Infant SemoBold Italic';
 $cupm:			'Cormorant Upright Medium';
 
-$hv:			"Helvetica Neue";
+$hv:			'HelveticaNeueCyr';
 
 $din:			'DIN Pro Cond Bold';
 
@@ -29,8 +29,8 @@ $din:			'DIN Pro Cond Bold';
 html,
 body {
 	height: 100%;
-	font-family: $hv;
     font-size: 16px;
+    font-family: $hv;
     color: $grey;
 }
 h2 {
