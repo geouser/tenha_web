@@ -1,0 +1,133 @@
+.media-item {
+	display: block;
+	margin: 10px 0;
+
+	a {
+		padding: 20px;
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		background-image: url(../images/media-item-border.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+
+		&:after {
+			content:'';
+			width: 100%;
+			padding-bottom: 100%;
+			display: block;
+		}
+	}
+
+	
+
+	.cover {
+		position: absolute;
+		left: 20px;
+		top: 20px;
+		bottom: 20px;
+		right: 20px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+
+		&:after {
+			content: "\f0da";
+			width: 30px;
+			height: 30px;
+			border: 1px solid #fff;
+			background-color: transparent;
+			opacity: .2;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			border-radius: 50%;
+			color: #fff;
+			font-family: FontAwesome;
+			text-align: center;
+			line-height: 28px;
+			padding-left: 2px;
+			-webkit-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	.title {
+		position: absolute;
+		left: 50%;
+		bottom: 40px;
+		color: #fff;
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
+		font-family: $din;
+		font-size: 18px;
+		padding: 0 35px;
+		width: 100%;
+		text-align: center;
+		-webkit-transition: color 0.3s ease;
+		-o-transition: color 0.3s ease;
+		transition: color 0.3s ease;
+	}
+
+
+	a:hover {
+		.cover:after {
+			background-color: $gold;
+			opacity: 1;
+			border-color: transparent;
+			-webkit-transform: translate(-50%, -50%) scale(2.6);
+			-ms-transform: translate(-50%, -50%) scale(2.6);
+			-o-transform: translate(-50%, -50%) scale(2.6);
+			transform: translate(-50%, -50%) scale(2.6);
+		}
+
+		.title {
+			color: $gold;
+		}
+	}
+}
+
+
+.media-inner {
+	padding-bottom: 0;
+
+	.container {
+		position: relative;
+	}
+
+	.song {
+		padding-top: 30px;
+		padding-bottom: 0; 
+	}
+}
+
+a.return-back {
+	position: absolute;
+	right: 0;
+	top: 14px;
+	font-family: $cim;
+	font-size: 24px;
+	color: #666666;
+
+	@media ($lg) {
+		right: 15px;
+	}
+
+	span {
+		vertical-align: middle;
+	}
+
+	.fa {
+		font-size: 20px;
+		color: #999999;
+		margin-left: 15px;
+		vertical-align: middle;
+	}
+}

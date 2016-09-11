@@ -147,6 +147,7 @@ jQuery(document).ready(function($) {
         var customPlayer = $(this).siblings('.player');
         var progressBar = customPlayer.find('.player-progress-bar');
         var progressBarHandle = customPlayer.find('.ui-slider-handle');
+        var progressBarRange = customPlayer.find('.ui-slider-range');
 
         var startTime = 0;
         var currentTime = 0;
@@ -173,6 +174,7 @@ jQuery(document).ready(function($) {
             currentTime = player[0].currentTime;
             var pos = (currentTime/endTime)*100;
             progressBarHandle.css('left', pos+'%');
+            progressBarRange.css('width', pos+'%')
         };
 
 
@@ -181,6 +183,7 @@ jQuery(document).ready(function($) {
 
     $('.player-progress-bar').slider({
         value: 0,
+        range: "min",
         change: function( event, ui ) {
             var player = $(this).parent('.player').siblings('audio');
             var val = ui.value;

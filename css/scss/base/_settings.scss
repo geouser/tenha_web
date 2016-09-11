@@ -21,7 +21,10 @@ $din:			'DIN Pro Cond Bold';
 
 // RESPONSIVE
 // ---------------------------
-
+$lg:            'max-width: 1199px';
+$md:            'max-width: 991px';
+$sm:            'max-width: 767px';
+$xs:            'max-width: 543px';
 
 
 // TYPOGRAPHIC
@@ -63,6 +66,12 @@ h2 {
 }
 .container {
 	width: 1200px;
+    background-color: inherit;
+
+    @media (max-width: 1199px) {
+        width: 100%;
+        padding: 0 15px;
+    }
 }
 section {
     padding: 70px 0;
@@ -71,4 +80,10 @@ section {
 
 .coffeeBg {
     background-color: $coffee;
+}
+.clearfix {
+    @extend %clearfix;
+}
+.media {
+    margin-top: 0;
 }

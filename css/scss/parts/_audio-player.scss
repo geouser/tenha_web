@@ -72,7 +72,7 @@
 				position: absolute;
 				left: 0;
 				top: 4px;
-				background-color: #CCC0AF;
+				background-color: #e2e2e2;
 				z-index: 1;
 			}
 
@@ -89,6 +89,15 @@
 				-o-transform: translateY(-50%);
 				transform: translateY(-50%);
 				margin-left: -5px;
+				z-index: 3;
+			}
+
+			.ui-slider-range {
+				position: absolute;
+				height: 2px;
+				background-color: $gold;
+				left: 0;
+				top: 4px;
 				z-index: 2;
 			}
 		}

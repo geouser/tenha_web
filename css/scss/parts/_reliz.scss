@@ -1,23 +1,26 @@
 .reliz__list {
-    -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
-    -webkit-column-gap: 80px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 80px; /* Firefox */
-    column-gap: 80px;list-style-type: none;
+    @include flex($alignI: flex-start);
+
     time {
         display: block;
-        font: 15px $din;
-        color: $greyL;
+        font: 14px $din;
+        color: #888888;
         margin-bottom: 10px;
     } 
-    span {
-        borde-bottom: 1px dotted $grey;
+    a {
+        border-bottom: 1px dotted $grey;
         font: 16px/28px $hv;
         color: $grey;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
     li {
         margin-bottom: 28px;
+        width: 33.3333%;
+        list-style: none;
+        display: inline-block;
     }
 }
 

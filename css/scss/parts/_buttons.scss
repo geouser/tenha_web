@@ -13,5 +13,46 @@
         height: 6px;
         margin: -1px auto 0;
         border: 1px solid $greyL;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    &:hover:after {
+        height: 8px;
+        width: 97%;
+    }
+
+    &--line-through {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+.button-group {
+    hr.for-button {
+        border-top: 1px solid #ccc;
+        position: relative;
+        margin: 95px 0 -25px 0;
+        z-index: 1;
+    }
+    hr.for-button:after {
+        content: '';
+        height: 10px;
+        width: 220px;
+        position: absolute;
+        top: -5px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: inherit;
+    }
+    .button {
+        position: relative;
+        z-index: 2;
     }
 }
