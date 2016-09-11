@@ -110,15 +110,11 @@
 
 a.return-back {
 	position: absolute;
-	right: 0;
+	right: 15px;
 	top: 14px;
 	font-family: $cim;
 	font-size: 24px;
 	color: #666666;
-
-	@media ($lg) {
-		right: 15px;
-	}
 
 	span {
 		vertical-align: middle;
