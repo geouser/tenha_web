@@ -6,28 +6,72 @@
     -webkit-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
+    .wrapper {
+        height: 100%;
+        width: 98%;
+        @include flex($direction: column, $alignI: flex-end, $justify: center);
+    }
     &--big {
         height: 940px;
         background-image: url("../images/offer_bg.jpg");
-    }
-    .wrapper {
-        height: 100%;
-        @include flex($direction: column, $alignI: center, $justify: center);
+        .wrapper {
+            @include flex($direction: column, $alignI: center, $justify: center);
+        }
     }
 }
 
 .quote {
-    color: #FFF;
-    font: 38px/60px $cisbi;
-    text-align: center;
-    width: 750px;
+    color: rgba(255,255,255, .95);
+    font: 22px/25px $cisbi;
+    text-align: right;
+    width: 610px;
     font-weight: 100;
-    .author {
-        display: block;
-        text-transform: uppercase;
-        font: 22px $din;
-        color: $gold;
-        text-shadow: -0.087px 0.996px 1px rgba(0, 0, 0, 0.3);
-        margin-top: 20px;
+    text-decoration: underline;
+    &--center {
+        font: 38px/60px $cisbi;
+        text-align: center;
+        text-decoration: none;
+        width: 750px;
     }
+    &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: top;
+        width: 14px;
+        height: 12px;
+        margin-right: 5px;
+        background-image: url("../images/quote.png");
+        -webkit-background-size: 100% 100%;
+             -o-background-size: 100% 100%;
+                background-size: 100% 100%;
+    }
+    &:after {
+        content: "";
+        display: inline-block;
+        vertical-align: bottom;
+        width: 14px;
+        height: 12px;
+        margin-left: 5px;
+        background-image: url("../images/quote.png");
+        -webkit-transform: rotate(180deg);
+           -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+             -o-transform: rotate(180deg);
+                transform: rotate(180deg);
+        -webkit-background-size: 100% 100%;
+             -o-background-size: 100% 100%;
+                background-size: 100% 100%;
+    }
+}
+.author {
+    display: block;
+    text-transform: uppercase;
+    font: 18px $din;
+    color: $gold;
+    text-shadow: -0.087px 0.996px 1px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    text-decoration: none;
+}
+.quote--center + .author {
+    font-size: 22px;
 }
