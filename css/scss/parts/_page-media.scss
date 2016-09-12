@@ -115,6 +115,11 @@ a.return-back {
 	font-family: $cim;
 	font-size: 24px;
 	color: #666666;
+	@include m600 {
+        position: static;
+        margin-bottom: 20px;
+        display: block;
+    }
 
 	span {
 		vertical-align: middle;

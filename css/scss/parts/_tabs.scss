@@ -1,11 +1,18 @@
 .tabs {
 	position: relative;
 	padding-top: 22px;
+	@include m750 {
+        padding-top: 0;
+    }
 
 	&__menu {
 		position: absolute;
 		right: 0;
 		top: -105px;
+		@include m750 {
+            position: static;
+            margin-bottom: 40px;
+        }
 
 		&__item {
 			display: inline-block;

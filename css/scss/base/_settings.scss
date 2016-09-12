@@ -36,7 +36,8 @@ body {
     font-family: $hv;
     color: $grey;
 }
-h2 {
+h2,
+h1 {
     color: $gold;
     font: 60px/72px $cupm;
     display: inline-block;
@@ -48,6 +49,9 @@ h2 {
         height: 1px;
         background-color: $gold;
         margin-top: -8px;
+    }
+    @media (max-width: 600px) {
+        font: 48px/60px $cupm;
     }
 }
 

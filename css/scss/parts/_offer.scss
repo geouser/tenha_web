@@ -12,13 +12,23 @@
         width: 100%;
         padding: 0 44px;
         @include flex($direction: column, $alignI: flex-end, $justify: center);
+        @include m1100 {
+            padding: 0 15px;
+        }
     }
     &--big {
         height: 940px;
         background-image: url("../images/offer_bg.jpg");
+        @include m1100 {
+            height: auto;
+            padding: 140px 0 160px;
+        }
         .wrapper {
             @include flex($direction: column, $alignI: center, $justify: center);
         }
+    }
+    @include m1100 {
+        padding: 100px 0 80px;
     }
 }
 
@@ -50,6 +60,7 @@
 .offer--big {
     .down {
         right: 0;
+        left: 0;
         bottom: 65px;
     }
 }
@@ -61,11 +72,29 @@
     width: 610px;
     font-weight: 100;
     text-decoration: none;
+    @include m1100 {
+        width: 90%;
+    }
+    @include m750 {
+        font: 20px/22px $cisbi;
+    }
+    @include m600 {
+        font: 18px/20px $cisbi;
+    }
     &--center {
         font: 38px/60px $cisbi;
         text-align: center;
         width: 750px;
         text-decoration: underline;
+        @include m1100 {
+            width: 90%;
+        }
+        @include m750 {
+            font: 34px/55px $cisbi;
+        }
+        @include m600 {
+            font: 28px/40px $cisbi;
+        }
     }
     &:before {
         content: "";

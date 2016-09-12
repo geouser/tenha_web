@@ -11,7 +11,13 @@
 }
 
 .news-item {
-
+	display: block;
+	@include tab {
+		margin-bottom: 20px;
+	}
+	@media (max-width: 450px) {
+		width: 100%;
+	}
 	.cover {
 		width: 100%;
 		height: 180px;

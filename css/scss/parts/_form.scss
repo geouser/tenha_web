@@ -1,0 +1,111 @@
+.form {
+    text-align: right;
+    padding: 0 10px;
+    input,
+    textarea {
+        height: 50px;
+        font: 16px $din;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+        color: $grey;
+    }
+    .row {
+        div:nth-of-type(2n) {
+            padding-right: 0;
+        }
+        div:nth-of-type(3n + 1) {
+            padding-left: 0;
+        }
+        @include tab {
+            margin: 0;
+            div:nth-of-type(2n) {
+                padding: 0;
+            }
+            div:nth-of-type(3n + 1) {
+                padding: 0;
+            }
+        }
+    }
+    textarea {
+        height: auto;
+        resize: none;
+        height: 210px;
+        width: 100%;
+        position: relative;
+        padding: 20px;
+    }
+    .button {
+        display: inline-block;
+    }
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    columns: $greyL;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    columns: $greyL;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    columns: $greyL;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    columns: $greyL;
+}
+
+textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    padding-top: 70px;
+}
+textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+padding-top: 70px;
+}
+textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+padding-top: 70px;
+}
+textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+padding-top: 70px;
+}
+
+.contactUs {
+    color: #202020;
+     @include tab {
+         margin-bottom: 40px;
+     }
+    a {
+        display: block;
+        margin-bottom: 15px;
+        color: #202020;
+        font: 22px $cim;
+        &:before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 40px;
+            height: 40px;
+            background-image: url("../images/contactsIcons.png");
+            margin-right: 12px;
+        }
+        &.mail {
+          &:before {
+
+          }  
+        }
+        &.tel {
+          &:before {
+            background-position: 0 93px;
+          }  
+        }
+        &.web {
+          &:before {
+            background-position: 0 40px;
+          }  
+        }
+    }
+}
+
+.contacts .article {
+    p {
+        padding-right: 40px;
+    }
+}

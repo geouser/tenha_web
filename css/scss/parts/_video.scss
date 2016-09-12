@@ -11,6 +11,15 @@
 		transform: translateX(-50%);
 		top: 70px;
 		z-index: 2;
+		@include m750 {
+			top: 10px;
+			left: 10px;
+            -webkit-transform: none;
+               -moz-transform: none;
+                -ms-transform: none;
+                 -o-transform: none;
+                    transform: none;
+        }
 	}
 
 	h2 {
@@ -19,6 +28,15 @@
 		&:after {
 			background-color: #fff;
 		}
+		@include m750 {
+            font: 44px/56px $cupm;
+        }
+        @include m600 {
+            font: 28px/40px $cupm;
+        }
+        @include m360 {
+            font: 22px/32px $cupm;
+        }
 	}
 
 	&__holder {
@@ -65,6 +83,14 @@
 			-webkit-transition:  all 0.3s ease;
 			-o-transition:  all 0.3s ease;
 			transition:  all 0.3s ease;
+			@include m750 {
+	            width: 50px;
+				height: 50px;
+	        }
+	        @include m360 {
+	            width: 40px;
+				height: 40px;
+	        }
 
 			&:hover {
 				-webkit-animation: pulse 1s linear;
@@ -76,6 +102,9 @@
 			.fa:before {
 				content: "\f04c";
 				font-size: 20px;
+				@include m750 {
+		            font-size: 16px;
+		        }
 			}
 
 			&.paused {

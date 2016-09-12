@@ -21,6 +21,12 @@
         width: 33.3333%;
         list-style: none;
         display: inline-block;
+        @include m800 {
+            width: 50%;
+        }
+        @include m600 {
+            width: 100%;
+        }
     }
 }
 
@@ -53,6 +59,12 @@
         padding: 12px;
         max-width: 80%;
         font: 18px/26px $din;
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+        p {
+            max-width: 100%;
+        }
     }
 }
 
