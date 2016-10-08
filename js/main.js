@@ -38,6 +38,17 @@ jQuery(document).ready(function($) {
     });
 
 
+    /*---------------------------
+                                  Scroll down
+    ---------------------------*/
+    $('button.down').on('click', function(event) {
+        event.preventDefault();
+        var top = $('section.offer').next().offset().top;
+        
+        $("html, body").animate({scrollTop: top}, 500);
+    });
+
+
 
     /*---------------------------
                                   Magnific popup
@@ -136,10 +147,6 @@ jQuery(document).ready(function($) {
      /*-------------------------
                               Audio player
     -------------------------*/
-    /*audiojs.events.ready(function() {
-        var as = audiojs.createAll();
-    });*/
-
     $('.song .play-btn').on('click', function(event) {
         event.preventDefault();    
 
@@ -151,8 +158,7 @@ jQuery(document).ready(function($) {
 
         var startTime = 0;
         var currentTime = 0;
-        var endTime = player[0].seekable.end(0);
-
+        var endTime = player[0].duration;
 
         if ($(this).hasClass('paused')) {
             $('audio').trigger('pause');
