@@ -7,7 +7,7 @@
 		position: relative;
 		display: block;
 		margin: 0 auto;
-		background-image: url(../images/media-item-border.png);
+		background-image: url(../images/media-item-border.svg);
 		background-size: 100%;
 		background-repeat: no-repeat;
 
@@ -119,6 +119,14 @@ a.return-back {
         position: static;
         margin-bottom: 20px;
         display: block;
+    }
+
+    &:hover {
+    	color: $gold;
+
+    	.fa {
+    		color: $gold;
+    	}
     }
 
 	span {

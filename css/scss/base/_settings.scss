@@ -4,7 +4,7 @@
 $red : #e54c39;
 $grey: #878787;
 $greyL: #cccccc;
-$gold: #caa573;
+$gold: #C3995F;
 $coffee: #f4f3f0;
 
 // FONTS
@@ -86,6 +86,9 @@ hr {
 
 .coffeeBg {
     background-color: $coffee;
+}
+.whiteBg {
+    background-color: #fff;
 }
 .clearfix {
     @extend %clearfix;

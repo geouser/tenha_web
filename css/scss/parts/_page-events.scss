@@ -128,6 +128,12 @@
 			font-family: $din;
 			color: #444444;
 			margin-bottom: 20px;
+			line-height: normal;
+			display: inherit;
+
+			&:after {
+				display: none;
+			}
 		}
 
 		time {
