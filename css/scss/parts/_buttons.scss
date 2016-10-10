@@ -7,6 +7,10 @@
     padding: 0;
     color: $gold;
     width: 160px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
     &:after {
         content: "";
         display: block;
@@ -20,14 +24,15 @@
         transition: all 0.3s ease;
     }
 
-    &:hover:after {
-        height: 8px;
-        width: 97%;
-    }
-
     &:hover {
         text-decoration: none;
-        color: $gold;
+        color: #fff;
+        background-color: $gold;
+        border-color: $gold;
+
+        &:after {
+            border-color: $gold;
+        }
     }
 
     &--line-through {

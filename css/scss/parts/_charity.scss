@@ -2,11 +2,21 @@
     .charityList {
         border: 1px solid $greyL;
         padding: 7px 0;
+
+        @media (max-width: 1199px) {
+            border: 0;
+        }
+
+
         &__item {
             padding: 0 0px 0 7px;
             cursor: pointer;
+            @media (max-width: 1199px) {
+                margin-bottom: 20px;
+            }
             @media (max-width: 400px) {
                 width: 100%;
+                padding-right: 7px;
             }
             &:last-of-type {
                 padding-right: 7px;
