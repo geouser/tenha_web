@@ -1,0 +1,76 @@
+.biography article p:first-of-type {
+    padding-top: 60px;
+}
+.biography article,
+.poem article {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.diploma-link {
+    margin: 70px auto 0;
+    text-align: center;
+
+    a {
+        font-family: $cim;
+        color: $gold;
+        font-size: 22px;
+
+        @media (max-width: 400px) {
+            font-size: 16px;
+        }
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            border-bottom: 1px solid $gold;
+            line-height: 26px;
+        }
+
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+    }    
+}
+
+
+.poem article .verse {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0 45px 40px;
+    margin-bottom: 35px;
+    font-family: $cisbi;
+    color: $gold;
+    font-size: 22px;
+}
+
+.poem article {
+    padding-top: 45px;
+}
+
+
+.author-sign {
+    img,
+    p {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 22px;
+    }
+
+    img {
+        margin-right: 23px;
+    }
+
+    .author-name {
+        font-family: $cisb;
+        display: block;
+        color: #212121;
+    }
+
+    .position {
+        color: $gold;
+        font-family: $cisbi;
+        display: block;
+    }
+}

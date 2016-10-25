@@ -91,60 +91,83 @@
 	hr {
 		margin: 20px 0 40px 0;
 	}
+}
 
-	article {
-		font-size: 15px;
-		color: #444444;
-		border-bottom: 1px solid #ccc;
-		padding-bottom: 70px;
+article {
+	font-size: 15px;
+	line-height: 26px;
+	color: #444444;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 70px;
 
-		.article-image {
-			float: left;
-			width: 41.666%;
-			margin: 0 40px 20px 0;
-			position: relative;
+	.article-image {
+		float: left;
+		width: 41.666%;
+		margin: 0 40px 20px 0;
+		position: relative;
+
+		@media (max-width: 600px) {
+			width: 100%;
+		}
+
+		.imgWrap {
+			width: 100%;
+			height: auto;
 
 			img {
-				width: 100%;
-			}
-
-			&:before {
-				content:'';
-				width: -webkit-calc(100% - 20px);
-				width: calc(100% - 20px);
-				height: -webkit-calc(100% - 20px);
-				height: calc(100% - 20px);
-				position: absolute;
-				border: 1px solid #fff;
-				opacity: .2;
-				top: 10px;
-				left: 10px;
-				z-index: 2;
+				display: block;
 			}
 		}
 
-		.article-title {
-			font-size: 20px;
-			font-family: $din;
-			color: #444444;
-			margin-bottom: 20px;
-			line-height: normal;
-			display: inherit;
-
-			&:after {
-				display: none;
-			}
+		&.align-right {
+			float: right;
+			margin: 0 0 20px 40px;
 		}
 
-		time {
-			display: block;
-	        font: 16px $din;
-	        color: #888888;
-	        margin-bottom: 30px;
+		img {
+			width: 100%;
 		}
 
-		p:not(:last-child){
-			margin-bottom: 22px;
+		&:before {
+			content:'';
+			width: -webkit-calc(100% - 20px);
+			width: calc(100% - 20px);
+			height: -webkit-calc(100% - 20px);
+			height: calc(100% - 20px);
+			position: absolute;
+			border: 1px solid #fff;
+			opacity: .2;
+			top: 10px;
+			left: 10px;
+			z-index: 2;
 		}
+
+		&.no-border:before {
+			display: none;
+		}
+	}
+
+	.article-title {
+		font-size: 20px;
+		font-family: $din;
+		color: #444444;
+		margin-bottom: 20px;
+		line-height: normal;
+		display: inherit;
+
+		&:after {
+			display: none;
+		}
+	}
+
+	time {
+		display: block;
+        font: 16px $din;
+        color: #888888;
+        margin-bottom: 30px;
+	}
+
+	p:not(:last-child){
+		margin-bottom: 22px;
 	}
 }

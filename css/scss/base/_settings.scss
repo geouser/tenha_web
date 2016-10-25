@@ -4,7 +4,7 @@
 $red : #e54c39;
 $grey: #878787;
 $greyL: #cccccc;
-$gold: #C3995F;
+$gold: #bc8c4b;
 $coffee: #f4f3f0;
 
 // FONTS
@@ -13,6 +13,7 @@ $ci:			'Cormorant Infant Regular';
 $cim:			'Cormorant Infant Medium';
 $cisbi:			'Cormorant Infant SemoBold Italic';
 $cupm:			'Cormorant Upright Medium';
+$cisb:          'Cormorant Garamond SemiBold';
 
 $hv:			'HelveticaNeueCyr';
 
@@ -71,6 +72,7 @@ h1 {
 .container {
 	width: 1200px;
     background-color: inherit;
+    position: relative;
 
     @media (max-width: 1199px) {
         width: 100%;

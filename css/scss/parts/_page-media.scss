@@ -57,6 +57,14 @@
 		}
 	}
 
+	&.poem .cover:after {
+		background-image: url(../images/poem.svg);
+		background-size: 50%;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		content: '';
+	}
+
 	.title {
 		position: absolute;
 		left: 50%;
