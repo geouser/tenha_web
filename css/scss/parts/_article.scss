@@ -73,3 +73,51 @@ article.borderTop {
         }
     }
 }
+
+.docs {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+        -webkit-column-gap: 50px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 50px; /* Firefox */
+    column-gap: 50px;
+        margin-top: 100px;
+         border-top: 1px solid #dddddd;
+    margin-top: 20px;
+    padding-top: 30px;
+        a {
+            margin-bottom: 38px;
+            color: #444;
+            display: block;
+            -webkit-transition: all .2s;
+               -moz-transition: all .2s;
+                -ms-transition: all .2s;
+                 -o-transition: all .2s;
+                    transition: all .2s;
+            span {
+                line-height: 22px;
+            }
+            &:before {
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                width: 35px;
+                height: 40px;
+                margin-right: 12px;
+                background-image: url("../images/pdf_grey.png");
+                -webkit-background-size: 100% 100%;
+                     -o-background-size: 100% 100%;
+                        background-size: 100% 100%;
+            }
+            &:hover {
+                border: none;
+                text-decoration: none;
+                span {
+                    border-bottom: 1px dotted #444;
+                }
+            }
+            &:hover:before {
+                 background-image: url("../images/pdf.png");
+            }
+        }
+}
