@@ -31,3 +31,45 @@ article.borderTop {
     padding-top: 30px;
     border-bottom: none;
 }
+
+.articleSlider {
+    width: 470px;
+    float: left;
+    margin: 0 40px 20px 0;
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        bottom: 8px;
+        right: 8px;
+        border: 1px solid rgba(255,255,255,.5);
+        z-index: 2;
+    }
+    .slick-dots {
+        bottom: auto;
+        top: 15px;
+        padding-left: 25px;
+        text-align: left;
+        margin: 0;
+        z-index: 3;
+        li {
+            width: 9px;
+            height: 9px;
+            background-color: #fff;
+            display: inline-block;
+            margin: 0 9px 0 0;
+            &.slick-active {
+                background-color: #e54c39;
+            }
+            &:before {
+                display: none;
+            }
+            button {
+                display: none;
+            }
+        }
+    }
+}

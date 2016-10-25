@@ -96,7 +96,7 @@ jQuery(document).ready(function($) {
         });
     });
 
-    
+
 
 
 
@@ -162,13 +162,26 @@ jQuery(document).ready(function($) {
                               Video
     -------------------------*/
 
-
+                $('.articleSlider').slick({
+                    fade: true,
+                    arrows: false,
+                    dots: true
+                });
 
     /*-------------------------
                               Tabs
     -------------------------*/
     if ( $('.tabs').length > 0 ) {
-        $('.tabs').tabs();
+        $('.tabs').tabs({
+           activate: function(event, ui) { 
+                $('.articleSlider').slick('unslick');
+                $('.articleSlider').slick({
+                    fade: true,
+                    arrows: false,
+                    dots: true
+                });
+            }
+        });
     }
 
 
