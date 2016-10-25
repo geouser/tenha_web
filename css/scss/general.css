@@ -342,6 +342,23 @@ a[href^=tel] {
   font-weight: 500;
   font-style: normal;
 }
+/*@font-face {
+    font-family: 'cormorant_infantsemibold';
+    src: url('../fonts/cormorantinfant-semibold-webfont.eot');
+    src: url('../fonts/cormorantinfant-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cormorantinfant-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/cormorantinfant-semibold-webfont.woff') format('woff'),
+         url('../fonts/cormorantinfant-semibold-webfont.svg#cormorant_infantsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+@font-face {
+  font-family: 'Cormorant Garamond SemiBold';
+  src: url("../fonts/subset-CormorantGaramond-SemiBold.eot");
+  src: url("../fonts/subset-CormorantGaramond-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-CormorantGaramond-SemiBold.woff") format("woff"), url("../fonts/subset-CormorantGaramond-SemiBold.ttf") format("truetype"), url("../fonts/subset-CormorantGaramond-SemiBold.svg#CormorantGaramond-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
 html,
 body {
   height: 100%;
@@ -352,7 +369,7 @@ body {
 
 h2,
 h1 {
-  color: #C3995F;
+  color: #bc8c4b;
   font: 60px/72px "Cormorant Upright Medium";
   display: inline-block;
   margin-bottom: 40px;
@@ -363,7 +380,7 @@ h1:after {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: #C3995F;
+  background-color: #bc8c4b;
   margin-top: -8px;
 }
 @media (max-width: 600px) {
@@ -386,6 +403,7 @@ h1:after {
 .container {
   width: 1200px;
   background-color: inherit;
+  position: relative;
 }
 @media (max-width: 1199px) {
   .container {
@@ -1378,7 +1396,7 @@ img.mfp-img {
   margin: auto;
   cursor: pointer;
   z-index: 100;
-  background-color: #C3995F;
+  background-color: #bc8c4b;
   border: none;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -1646,7 +1664,7 @@ img.mfp-img {
   display: block;
   text-transform: uppercase;
   font: 18px "DIN Pro Cond Bold";
-  color: #C3995F;
+  color: #bc8c4b;
   text-shadow: -0.087px 0.996px 1px rgba(0, 0, 0, 0.3);
   margin-top: 20px;
   text-decoration: none;
@@ -1826,7 +1844,7 @@ img.mfp-img {
   text-decoration: none;
 }
 .charity .charityList__item:hover p {
-  background: #C3995F;
+  background: #bc8c4b;
   color: #FFF;
   text-decoration: none;
 }
@@ -1958,7 +1976,7 @@ img.mfp-img {
   text-align: center;
   font: 16px/48px "DIN Pro Cond Bold";
   padding: 0;
-  color: #C3995F;
+  color: #bc8c4b;
   width: 160px;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -1979,11 +1997,11 @@ img.mfp-img {
 .button:hover {
   text-decoration: none;
   color: #fff;
-  background-color: #C3995F;
-  border-color: #C3995F;
+  background-color: #bc8c4b;
+  border-color: #bc8c4b;
 }
 .button:hover:after {
-  border-color: #C3995F;
+  border-color: #bc8c4b;
 }
 .button--line-through {
   display: block;
@@ -2216,7 +2234,7 @@ img.mfp-img {
   padding: 0;
   border-radius: 50%;
   overflow: hidden;
-  color: #C3995F;
+  color: #bc8c4b;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -2501,7 +2519,7 @@ textarea:-ms-input-placeholder {
   color: #666666;
 }
 .song .play-btn:hover {
-  background-color: #C3995F;
+  background-color: #bc8c4b;
   color: #fff;
 }
 .song .play-btn.paused {
@@ -2555,7 +2573,7 @@ textarea:-ms-input-placeholder {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #C3995F;
+  background-color: #bc8c4b;
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -2569,7 +2587,7 @@ textarea:-ms-input-placeholder {
 .song .player .player-progress-bar .ui-slider-range {
   position: absolute;
   height: 2px;
-  background-color: #C3995F;
+  background-color: #bc8c4b;
   left: 0;
   top: 4px;
   z-index: 2;
@@ -2632,6 +2650,13 @@ audio {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.media-item.poem .cover:after {
+  background-image: url(../images/poem.svg);
+  background-size: 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  content: '';
+}
 .media-item .title {
   position: absolute;
   left: 50%;
@@ -2651,7 +2676,7 @@ audio {
   transition: color 0.3s ease;
 }
 .media-item a:hover .cover:after {
-  background-color: #C3995F;
+  background-color: #bc8c4b;
   opacity: 1;
   border-color: transparent;
   -webkit-transform: translate(-50%, -50%) scale(2.6);
@@ -2660,7 +2685,7 @@ audio {
   transform: translate(-50%, -50%) scale(2.6);
 }
 .media-item a:hover .title {
-  color: #C3995F;
+  color: #bc8c4b;
 }
 
 .media-inner {
@@ -2690,10 +2715,10 @@ a.return-back {
   }
 }
 a.return-back:hover {
-  color: #C3995F;
+  color: #bc8c4b;
 }
 a.return-back:hover .fa {
-  color: #C3995F;
+  color: #bc8c4b;
 }
 a.return-back span {
   vertical-align: middle;
@@ -2792,22 +2817,40 @@ a.return-back .fa {
 .event-details hr {
   margin: 20px 0 40px 0;
 }
-.event-details article {
+
+article {
   font-size: 15px;
+  line-height: 26px;
   color: #444444;
   border-bottom: 1px solid #ccc;
   padding-bottom: 70px;
 }
-.event-details article .article-image {
+article .article-image {
   float: left;
   width: 41.666%;
   margin: 0 40px 20px 0;
   position: relative;
 }
-.event-details article .article-image img {
+@media (max-width: 600px) {
+  article .article-image {
+    width: 100%;
+  }
+}
+article .article-image .imgWrap {
+  width: 100%;
+  height: auto;
+}
+article .article-image .imgWrap img {
+  display: block;
+}
+article .article-image.align-right {
+  float: right;
+  margin: 0 0 20px 40px;
+}
+article .article-image img {
   width: 100%;
 }
-.event-details article .article-image:before {
+article .article-image:before {
   content: '';
   width: -webkit-calc(100% - 20px);
   width: calc(100% - 20px);
@@ -2820,7 +2863,10 @@ a.return-back .fa {
   left: 10px;
   z-index: 2;
 }
-.event-details article .article-title {
+article .article-image.no-border:before {
+  display: none;
+}
+article .article-title {
   font-size: 20px;
   font-family: "DIN Pro Cond Bold";
   color: #444444;
@@ -2828,17 +2874,173 @@ a.return-back .fa {
   line-height: normal;
   display: inherit;
 }
-.event-details article .article-title:after {
+article .article-title:after {
   display: none;
 }
-.event-details article time {
+article time {
   display: block;
   font: 16px "DIN Pro Cond Bold";
   color: #888888;
   margin-bottom: 30px;
 }
-.event-details article p:not(:last-child) {
+article p:not(:last-child) {
   margin-bottom: 22px;
+}
+
+.biography article p:first-of-type {
+  padding-top: 60px;
+}
+
+.biography article,
+.poem article {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.diploma-link {
+  margin: 70px auto 0;
+  text-align: center;
+}
+.diploma-link a {
+  font-family: "Cormorant Infant Medium";
+  color: #bc8c4b;
+  font-size: 22px;
+}
+@media (max-width: 400px) {
+  .diploma-link a {
+    font-size: 16px;
+  }
+}
+.diploma-link a span {
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 1px solid #bc8c4b;
+  line-height: 26px;
+}
+.diploma-link a img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.poem article .verse {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0 45px 40px;
+  margin-bottom: 35px;
+  font-family: "Cormorant Infant SemoBold Italic";
+  color: #bc8c4b;
+  font-size: 22px;
+}
+
+.poem article {
+  padding-top: 45px;
+}
+
+.author-sign img,
+.author-sign p {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 22px;
+}
+.author-sign img {
+  margin-right: 23px;
+}
+.author-sign .author-name {
+  font-family: "Cormorant Garamond SemiBold";
+  display: block;
+  color: #212121;
+}
+.author-sign .position {
+  color: #bc8c4b;
+  font-family: "Cormorant Infant SemoBold Italic";
+  display: block;
+}
+
+.diploms-gallery .container {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 50px;
+}
+
+.diplom {
+  padding: 10px;
+  position: relative;
+  margin: 10px 0;
+}
+.diplom img {
+  display: block;
+  width: 100%;
+}
+.diplom a {
+  color: #444444;
+}
+.diplom .cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 10px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: -0.872px 9.962px 17px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  color: #444444;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.diplom .cover time {
+  width: 100%;
+  font-family: "DIN Pro Cond Bold";
+  font-size: 15px;
+  color: #878787;
+  margin-bottom: 20px;
+}
+.diplom .cover .title {
+  font-size: 14px;
+}
+.diplom .cover .short {
+  font-size: 14px;
+}
+@media (max-width: 1000px) {
+  .diplom .cover {
+    padding: 5px;
+  }
+  .diplom .cover time {
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+  .diplom .cover .title,
+  .diplom .cover .short {
+    font-size: 11px;
+    width: 100%;
+  }
+}
+.diplom:hover .cover {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*# sourceMappingURL=general.css.map */
