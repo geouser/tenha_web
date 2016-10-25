@@ -6,3 +6,28 @@
         text-align: left;
     }
 }
+
+article {
+    .charityList {
+        margin-top: 50px;
+        p {
+            background-color: #FFF;
+        }
+    }
+    > img {
+        float: right;
+        margin: 0 0 30px 60px;
+        &.left {
+            float: left;
+            margin: 0 60px 30px 0;
+        }
+    }
+}
+
+
+article.borderTop {
+    border-top: 1px solid #dddddd;
+    margin-top: 20px;
+    padding-top: 30px;
+    border-bottom: none;
+}
