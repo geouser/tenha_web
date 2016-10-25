@@ -100,6 +100,16 @@ article {
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 70px;
 
+	&.border-top {
+		padding-top: 50px;
+		border-top: 1px solid #ccc;
+	}
+
+	&.no-border-bottom {
+		border-bottom: 0;
+		padding-bottom: 0;
+	}
+
 	.article-image {
 		float: left;
 		width: 41.666%;
@@ -167,7 +177,18 @@ article {
         margin-bottom: 30px;
 	}
 
-	p:not(:last-child){
+	p:not(:last-child),
+	ol:not(:last-child),
+	ul:not(:last-child) {
 		margin-bottom: 22px;
+	}
+
+	ol, ul {
+		padding-left: 1.8em;
+		margin-top: 0;
+	}
+
+	.gold {
+		color: $gold;
 	}
 }
